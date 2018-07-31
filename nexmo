@@ -1,1 +1,13 @@
+<?php
 
+// src/Menu.php
+
+public function answerAction()
+{
+    $this->append([
+        'action' => 'talk',
+        'text' => 'Thanks for calling the CKMI Phone Line.'
+    ]);
+
+    $this->promptSearch();
+}
